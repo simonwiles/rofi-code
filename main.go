@@ -217,7 +217,7 @@ func runRofi(workspaces workspace.WorkspaceCollection) {
 		}
 	}()
 
-	out, err := cmd.CombinedOutput()
+	out, err := cmd.Output()
 	if err != nil {
 		log.Fatal(err)
 	}
